@@ -23,7 +23,8 @@ export default function Accommodate(props){
             <p>{`총 ${count}명 수용했습니다.`}</p>
             <button onClick={increaseCount} disabled={isFull}>입장</button>
             <button onClick={decreaseCount}>퇴장</button>
-            {isFull && <p style={{color : "red"}}>정원이 가득찼습니다.</p>}
+            {isFull && <p style={{color : "red"}}>정원이 가득찼습니다.</p>} 
+            {/* && = 단축평가, 왼쪽의 조건이 참이면 오른쪽의 element가 보여지거나, 안 보여짐 */}
         </div>
     );
 }
